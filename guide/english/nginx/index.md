@@ -1,8 +1,8 @@
 ---
-title: Installation of Nginx in Ubuntu
+title: Installation of Nginx in Ubuntu and RHEL
 ---
 
-## Installation of Nginx in Ubuntu
+## 1. Installation of Nginx in Ubuntu
 
 Step 1: Update Apt-Get
 
@@ -15,3 +15,19 @@ Step 2: Install Nginx
 One simple command to install Nginx is all that is needed:
 
 `apt-get -y install nginx`
+
+
+## 2. Installation of Nginx in RHEL
+
+Step 1: Install the EPEL repository
+
+`sudo yum install epel-release`
+
+Step 2: Update the repository
+`sudo yum update`
+
+Step 3: Install NGINX Open Source
+`sudo yum install nginx`
+
+Step 4: Verify the installation
+`sudo nginx -v`
